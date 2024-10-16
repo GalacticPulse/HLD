@@ -1,0 +1,9 @@
+- Strangler pattern is used when we break a legacy monolyth into microservices, We break some component and created microservices
+- we create a controller and for a request if microservice is built we route 10% traffic to the new ms, if error occurs we can reduce percentage, else we can increase
+- Saga & CQRS
+- In distributed system/ microservice we use separate db for each microservice, one issue occurs while maintainign transaction accross different db, there Two phase commit and saga helps
+- SAGA can be chreography saga / Orchestrational saga
+- in Choreography Saga we publish success event and compensation event in message queue, other service listens to it and take action.
+- In Choreography there ius a chance of Cyclic dewpendency , which can be overcome by Orchestrational Saga where we have another SAGA component that drives the service call, Call A, if success Call B, if failure Rollback A etc.
+- CQRS stands for Command, Query responsibility segragation
+- In Distributed microservice we also face problem to join data from differne t db owned by different microservices, We can create a separate DB only for Read where we have a view, We can update the view by message event
