@@ -1,0 +1,3 @@
+- Decomosition pattern, we can determine the scope or boundary of microservice by below two pattern
+- Decomposition by business functionaly (Order Management, Territor5y Managewment)
+- Decompositionb by Sub Domain - In Order Managemenertnb we can have order tracking, inventory management etc.
