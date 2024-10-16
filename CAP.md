@@ -1,0 +1,4 @@
+- Consistency, Availability & Partition tolerance
+- We can have CA, CP, AP but can't have a system CAP
+- CAP is a desirable property of a distributred system where data is replicated
+- We prefer CP & AP system , partition tolerance is must in distributed  system.
